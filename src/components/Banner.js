@@ -1,4 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
+
+// Variants 
+const banner = {
+  animate: {
+    transition: {
+      delayChildren: 0.4,
+      staggerChildren: 0.1
+    }
+  }
+};
 
 const Banner = () => {
   const [playMarquee, setPlayMarquee] = useState(false);
